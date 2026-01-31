@@ -42,7 +42,7 @@ const Navbar = ({ logoSrc }) => {
             )}
           </div>
           <span className="hidden md:block font-black text-xl text-black tracking-tighter uppercase">
-            Quizora
+            Quizora App
           </span>
         </Link>
 
