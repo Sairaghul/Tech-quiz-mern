@@ -7,7 +7,7 @@ import userRouter from "./routes/userRoutes.js";
 import resultRouter from "./routes/resultRoutes.js";
 
 const app = express();
-const port = 4000;
+
 
 // DB
 connectDB();
@@ -27,7 +27,7 @@ app.get("/", (req, res) => {
 });
 
 
-app.listen(port, () => {
-  console.log(`Server started on http://localhost:${port}`);
+app.listen(process.env.PORT || 4000, () => {
+  console.log(`Server started on http://localhost:${process.env.VITE_API_URL }`);
 });
 
